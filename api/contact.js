@@ -78,7 +78,7 @@ module.exports = async function contactHandler(req, res) {
     return sendJson(res, 400, { message: "Please enter your name, a valid email, and a message of at least five characters." });
   }
 
-  const apiKey = process.env.RESEND_API_KEY;
+  const apiKey = process.env.SENDBYTE_API_KEY;
   const recipient = process.env.CONTACT_TO_EMAIL;
   const sender = process.env.CONTACT_FROM_EMAIL;
   if (!apiKey || !recipient || !sender) {
@@ -86,7 +86,7 @@ module.exports = async function contactHandler(req, res) {
   }
 
   try {
-    const delivery = await fetch("https://api.resend.com/emails", {
+    const delivery = await fetch("https://api.sendbyte.africa/v1/emails", {
       method: "POST",
       headers: {
         Authorization: "Bearer " + apiKey,
