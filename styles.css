@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&display=swap");
+
 :root {
   --paper: #f6eddf;
   --paper-light: #fbf5e9;
@@ -14,7 +16,7 @@
   --tape: #e8b9a5;
   --display: Georgia, "Times New Roman", serif;
   --body: "Avenir Next", Avenir, "Segoe UI", sans-serif;
-  --hand: "Comic Sans MS", "Bradley Hand", cursive;
+  --hand: "Caveat", "Comic Sans MS", "Bradley Hand", cursive;
   --page: min(1180px, calc(100% - 72px));
 }
 
