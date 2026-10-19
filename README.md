@@ -20,9 +20,8 @@ Open `index.html` through a local HTTP server for a visual preview. To test the 
 
 Set these private environment variables in Vercel. Never commit a real API key.
 
-- `SENDBYTE_API_KEY`: SendByte API key.
-- `CONTACT_TO_EMAIL`: inbox that should receive messages.
-- `CONTACT_FROM_EMAIL`: sender address verified with SendByte.
+- `SENDBYTE_API_KEY`: SendByte API key (the only required variable).
+  The recipient (`chigozieanyaeji@gmail.com`) and sender (`ego@usevesselapp.com`) are set in the code.
 
 An example file is provided as `.env.example`. If the settings are missing, the endpoint returns a setup message and does not claim delivery. Messages are not displayed publicly or saved in a database.
 

@@ -79,9 +79,9 @@ module.exports = async function contactHandler(req, res) {
   }
 
   const apiKey = process.env.SENDBYTE_API_KEY;
-  const recipient = process.env.CONTACT_TO_EMAIL;
-  const sender = process.env.CONTACT_FROM_EMAIL;
-  if (!apiKey || !recipient || !sender) {
+  const recipient = "chigozieanyaeji@gmail.com";
+  const sender = "ego@usevesselapp.com";
+  if (!apiKey) {
     return sendJson(res, 503, { message: "The contact service is being set up. Please try again later." });
   }
 
