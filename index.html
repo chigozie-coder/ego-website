@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f6eddf" />
+    <meta name="description" content="A little corner of the internet for Ego Favour Anyaeji." />
+    <title>Ego Favour Anyaeji — a story still unfolding</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <svg class="svg-library" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+      <symbol id="i-star" viewBox="0 0 48 48"><path d="M24 3 29 18l16 1-12 10 4 16-13-9-13 9 4-16L3 19l16-1z" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/></symbol>
+      <symbol id="i-heart" viewBox="0 0 48 48"><path d="M24 41S5 29 5 16c0-9 12-13 19-2 7-11 19-7 19 2 0 13-19 25-19 25Z" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/></symbol>
+      <symbol id="i-arrow" viewBox="0 0 80 42"><path d="M2 34C22 3 46 5 70 14M70 14 59 4m11 10-14 4" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+      <symbol id="i-camera" viewBox="0 0 64 64"><path d="M11 20h10l4-7h14l4 7h10a5 5 0 0 1 5 5v24a5 5 0 0 1-5 5H11a5 5 0 0 1-5-5V25a5 5 0 0 1 5-5Z" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/><circle cx="32" cy="36" r="10" fill="none" stroke="currentColor" stroke-width="3"/><path d="M45 27h2" stroke="currentColor" stroke-width="4" stroke-linecap="round"/></symbol>
+      <symbol id="i-book" viewBox="0 0 64 64"><path d="M8 14c10-3 18-1 24 4v37c-6-5-14-7-24-4V14Zm48 0c-10-3-18-1-24 4v37c6-5 14-7 24-4V14Z" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/><path d="M15 23c5-1 9 0 12 2m22-2c-5-1-9 0-12 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+      <symbol id="i-spark" viewBox="0 0 64 64"><path d="M32 3 38 25l23 7-23 7-6 22-7-22L3 32l22-7z" fill="currentColor"/><circle cx="52" cy="9" r="3" fill="currentColor"/><circle cx="11" cy="52" r="3" fill="currentColor"/></symbol>
+      <symbol id="i-plane" viewBox="0 0 64 64"><path d="m5 30 52-22-18 48-9-19-20-7 39-13-27 23" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    </svg>
+
+    <div class="scroll-progress" aria-hidden="true"><span id="scroll-progress-bar"></span></div>
+
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="Ego's home">ego<span class="brand-flower">✿</span></a>
+      <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+        <a href="#home" class="nav-link is-active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#dreams" class="nav-link">Dreams</a>
+        <a href="#interests" class="nav-link">Interests</a>
+        <a href="#journey" class="nav-link">Journey</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="main-nav">
+        <span></span><span></span>
+      </button>
+    </header>
+
+    <main>
+      <section class="hero section" id="home" aria-labelledby="hero-title">
+        <div class="hero-art" aria-hidden="true">
+          <div class="hero-blue-scrap parallax" data-parallax=".06"></div>
+          <div class="hero-coral-scrap parallax" data-parallax="-.04"></div>
+          <div class="hero-wash"></div>
+          <span class="tape tape-top"></span>
+          <button class="doodle-sticker star-sticker" type="button" aria-label="Make a sparkle"><svg><use href="#i-star"></use></svg></button>
+          <button class="doodle-sticker heart-sticker" type="button" aria-label="Make a heart sparkle"><svg><use href="#i-heart"></use></svg></button>
+          <svg class="curly-arrow" viewBox="0 0 150 90"><path d="M7 76C31 18 84 11 122 42m0 0-20-4m20 4-8-18"/></svg>
+        </div>
+        <div class="hero-inner page-width">
+          <div class="hero-copy reveal">
+            <p class="eyebrow"><span class="eyebrow-spark">✦</span> A LITTLE HELLO FROM ME</p>
+            <h1 id="hero-title"><span class="hero-hi">Hi, I’m</span><span class="hero-name">Ego Favour</span><span class="hero-surname">Anyaeji <svg class="name-heart" aria-hidden="true"><use href="#i-heart"></use></svg></span></h1>
+            <div class="student-tag"><span>SS2 · Art Department</span><i aria-hidden="true"></i><span>story in progress</span></div>
+            <p class="hero-subtitle">A curious mind. A bright horizon.<br />A story still unfolding.</p>
+            <div class="hero-actions">
+              <a class="button button-coral" href="#about">Get to know me <span aria-hidden="true">↘</span></a>
+              <span class="hand-note">come on in <svg aria-hidden="true"><use href="#i-arrow"></use></svg></span>
+            </div>
+            <a class="scroll-cue" href="#about"><span class="scroll-cue-line"></span> Scroll to explore <span class="scroll-chevron">⌄</span></a>
+          </div>
+
+          <div class="hero-visual reveal" data-delay="140">
+            <button class="photo-polaroid tilt-card" id="photo-trigger" type="button" aria-label="Choose a photo for Ego's portrait">
+              <span class="photo-tape" aria-hidden="true"></span>
+              <span class="photo-window" id="photo-window">
+                <span class="photo-placeholder" id="photo-placeholder">
+                  <svg aria-hidden="true"><use href="#i-camera"></use></svg>
+                  <span>Add a favourite photo</span>
+                  <small>Tap to choose one</small>
+                </span>
+                <img id="portrait-image" alt="Ego Favour Anyaeji" hidden />
+              </span>
+              <span class="photo-caption">A work in progress <span aria-hidden="true">☺</span></span>
+            </button>
+            <input id="photo-input" type="file" accept="image/*" hidden />
+            <p class="photo-privacy" id="photo-status" role="status">Your photo stays in this browser.</p>
+            <img class="flower-cutout hero-flower parallax" data-parallax=".11" src="./assets/floral-cluster.webp" alt="" />
+            <div class="sticky-note note-bright tilt-card" data-tilt="small"><span class="note-pin"></span><p>A brighter<br />me ahead <b>♡</b></p></div>
+            <div class="sticky-note note-dreams tilt-card" data-tilt="small"><span class="note-pin"></span><p>Good ideas.<br />Brighter days <b>✦</b></p></div>
+          </div>
+        </div>
+        <span class="hero-bottom-note">Same student.<br />Bigger dreams <b>♡</b></span>
+      </section>
+
+      <section class="about section paper-section" id="about" aria-labelledby="about-title">
+        <div class="about-tear" aria-hidden="true"></div>
+        <div class="page-width about-grid">
+          <div class="section-heading reveal">
+            <span class="section-index">02.</span>
+            <p class="eyebrow">ABOUT ME</p>
+            <h2 id="about-title">Just a girl with a curious mind and a big heart.</h2>
+            <span class="coral-underline" aria-hidden="true"></span>
+          </div>
+          <div class="about-story reveal" data-delay="100">
+            <span class="tape tape-story" aria-hidden="true"></span>
+            <p class="story-intro">I’m Ego Favour Anyaeji, a Senior Secondary 2 student in the Art Department. I’m learning, growing, and discovering all that I can be.</p>
+            <p>This is my little corner of the internet—a place to share what I’m learning, the things that make me smile, and the dreams I’m still growing into.</p>
+            <span class="story-heart" aria-hidden="true">♡</span>
+          </div>
+          <div class="about-reminder tilt-card reveal" data-delay="180">
+            <span class="note-pin"></span>
+            <p class="reminder-title">A few things worth remembering</p>
+            <ul>
+              <li><span>✓</span> Stay curious</li>
+              <li><span>✓</span> Keep learning</li>
+              <li><span>✓</span> Make room for big dreams</li>
+            </ul>
+            <svg class="reminder-star" aria-hidden="true"><use href="#i-star"></use></svg>
+          </div>
+          <img class="flower-cutout about-flower" src="./assets/floral-cluster.webp" alt="" />
+        </div>
+      </section>
+
+      <section class="dreams section" id="dreams" aria-labelledby="dreams-title">
+        <div class="dream-sky" aria-hidden="true"><span class="sky-cloud cloud-one"></span><span class="sky-cloud cloud-two"></span></div>
+        <div class="page-width dreams-inner">
+          <div class="dreams-heading reveal">
+            <span class="section-index">03.</span>
+            <p class="eyebrow">MY DREAMS &amp; ASPIRATIONS</p>
+            <h2 id="dreams-title">A brighter<br />tomorrow</h2>
+            <p class="section-lead">Step by step, I’m building the future I dream about—with purpose, progress, and possibility.</p>
+          </div>
+          <div class="dream-path" aria-label="A path of hopes and possibilities">
+            <svg class="path-line" viewBox="0 0 900 230" preserveAspectRatio="none" aria-hidden="true"><path d="M15 185C108 186 85 103 191 113s73 78 181 62 93-113 195-99 91 105 191 92 87-69 126-109"/></svg>
+            <article class="path-stop stop-one reveal" data-delay="40"><span class="path-marker marker-coral"><svg><use href="#i-spark"></use></svg></span><p>Keep<br />learning</p><small>one day at a time</small></article>
+            <article class="path-stop stop-two reveal" data-delay="100"><span class="path-marker marker-blue"><svg><use href="#i-book"></use></svg></span><p>Explore<br />possibilities</p><small>stay open to new ideas</small></article>
+            <article class="path-stop stop-three reveal" data-delay="160"><span class="path-marker marker-yellow"><svg><use href="#i-spark"></use></svg></span><p>Grow my<br />skills</p><small>keep becoming</small></article>
+            <article class="path-stop stop-four reveal" data-delay="220"><span class="path-marker marker-mint"><svg><use href="#i-heart"></use></svg></span><p>Build a<br />bright future</p><small>my next chapter</small></article>
+          </div>
+          <div class="dream-note reveal tilt-card">
+            <span class="note-pin"></span><span class="dream-note-label">A DREAM IN THE MAKING</span>
+            <p>One day, I hope to become <span class="dream-blank">a lawyer who helps people find their voice.</span></p>
+            <small>I’m working towards my dream one step at a time.</small>
+            <svg aria-hidden="true"><use href="#i-heart"></use></svg>
+          </div>
+          <span class="dream-margin-note">Different chapters.<br />Same big dreams <b>♡</b></span>
+        </div>
+      </section>
+
+      <section class="interests section paper-section" id="interests" aria-labelledby="interests-title">
+        <div class="interest-tear" aria-hidden="true"></div>
+        <div class="page-width interests-inner">
+          <div class="interests-heading reveal">
+            <span class="section-index">04.</span>
+            <p class="eyebrow">THINGS I LOVE</p>
+            <h2 id="interests-title">Little things<br />that make me, me <span>♡</span></h2>
+          </div>
+          <div class="interest-cards">
+            <button class="interest-card interest-coral tilt-card reveal" type="button" data-delay="20"><span class="card-icon"><svg><use href="#i-book"></use></svg></span><span class="card-title">Reading</span><small>A good book, a whole new world.</small><span class="card-heart">♡</span></button>
+            <button class="interest-card interest-blue tilt-card reveal" type="button" data-delay="70"><span class="card-icon"><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M25 11v34.5a9 9 0 1 1-5-8V18l28-6v26.5a9 9 0 1 1-5-8V8z" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="card-title">Music</span><small>For every mood and moment.</small><span class="card-heart">♡</span></button>
+            <button class="interest-card interest-yellow tilt-card reveal" type="button" data-delay="120"><span class="card-icon"><svg><use href="#i-spark"></use></svg></span><span class="card-title">Creativity</span><small>Making ideas come to life.</small><span class="card-heart">♡</span></button>
+            <button class="interest-card interest-mint tilt-card reveal" type="button" data-delay="170"><span class="card-icon"><svg><use href="#i-plane"></use></svg></span><span class="card-title">Exploring new ideas</span><small>Curiosity gets me started.</small><span class="card-heart">♡</span></button>
+            <button class="interest-card interest-peach tilt-card reveal" type="button" data-delay="220"><span class="card-icon"><svg><use href="#i-heart"></use></svg></span><span class="card-title">Personal growth</span><small>A little better every day.</small><span class="card-heart">♡</span></button>
+            <button class="interest-card interest-gold tilt-card reveal" type="button" data-delay="270"><span class="card-icon"><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M14 40c0-10 8-18 18-18h4c8 0 14 6 14 14v6H14v-2Z" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/><path d="M18 42v10m28-10v10M23 23c-6-6-2-14 5-15 4 7 3 12-5 15Zm18 0c6-6 2-14-5-15-4 7-3 12 5 15Z" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><path d="M22 34h20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span><span class="card-title">Crocheting</span><small>Turning yarn into something lovely.</small><span class="card-heart">♡</span></button>
+            <button class="interest-card interest-lilac tilt-card reveal" type="button" data-delay="320"><span class="card-icon"><svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="10" r="5" fill="none" stroke="currentColor" stroke-width="3"/><path d="m28 19-9 11 10 7-8 11m15-26 9 9-7 8 8 13m-18-16-9-1m17-1 8-4M19 52l-8 5m36-5 7 5" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="card-title">Dancing</span><small>Moving to the music and having fun.</small><span class="card-heart">♡</span></button>
+            <button class="interest-card interest-rose tilt-card reveal" type="button" data-delay="370"><span class="card-icon"><svg viewBox="0 0 64 64" aria-hidden="true"><path d="m13 46 5-13L43 8l13 13-25 25-14 4-4-4Zm5-13 13 13m-8-5 25-25" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><path d="M10 56c12-2 25-1 42 0" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span><span class="card-title">Writing</span><small>Stories, thoughts, and words.</small><span class="card-heart">♡</span></button>
+          </div>
+          <div class="interest-bottom-note"><span>More little things to discover...</span><svg aria-hidden="true"><use href="#i-arrow"></use></svg></div>
+          <img class="flower-cutout interest-flower" src="./assets/floral-cluster.webp" alt="" />
+        </div>
+      </section>
+
+      <section class="journey section" id="journey" aria-labelledby="journey-title">
+        <div class="journey-paper" aria-hidden="true"></div>
+        <div class="page-width journey-inner">
+          <div class="journey-heading reveal">
+            <span class="section-index">05.</span>
+            <p class="eyebrow">MY SCHOOL JOURNEY</p>
+            <h2 id="journey-title">Every step<br />shapes me.</h2>
+            <p class="section-lead">A timeline of learning, growing, and making room for new possibilities.</p>
+          </div>
+          <div class="timeline">
+            <div class="timeline-rail" aria-hidden="true"><span></span></div>
+            <article class="timeline-item reveal"><span class="timeline-icon timeline-coral"><svg><use href="#i-book"></use></svg></span><div class="timeline-card"><small>RIGHT NOW</small><h3>SS2 · Art Department</h3><p>Learning, asking questions, and building a little more confidence every day.</p></div></article>
+            <article class="timeline-item reveal" data-delay="90"><span class="timeline-icon timeline-blue"><svg><use href="#i-spark"></use></svg></span><div class="timeline-card"><small>THE NEXT CHAPTER</small><h3>New things to discover</h3><p>More ideas, more skills, and new experiences along the way.</p></div></article>
+            <article class="timeline-item reveal" data-delay="180"><span class="timeline-icon timeline-yellow"><svg><use href="#i-heart"></use></svg></span><div class="timeline-card"><small>FUTURE ME</small><h3>A lawyer in the making</h3><p>I hope to study law and use my voice to help people.</p></div></article>
+          </div>
+          <div class="journey-doodle" aria-hidden="true">More chapters<br />to come <span>♡</span></div>
+          <img class="flower-cutout journey-flower" src="./assets/floral-cluster.webp" alt="" />
+        </div>
+      </section>
+
+      <section class="contact section paper-section" id="contact" aria-labelledby="contact-title">
+        <div class="contact-tear" aria-hidden="true"></div>
+        <div class="page-width contact-inner">
+          <div class="contact-copy reveal">
+            <span class="section-index">06.</span>
+            <p class="eyebrow">LET’S STAY IN TOUCH</p>
+            <h2 id="contact-title">What’s next?</h2>
+            <p>More learning. More growth. More exciting chapters. Have a question or a kind thought to share? Send me a note.</p>
+            <span class="thank-you">I’d love to hear from you <b>♡</b></span>
+          </div>
+          <form class="contact-form reveal" id="contact-form" action="/api/contact" method="post">
+            <div class="contact-form-heading">
+              <div><span class="form-kicker">A LITTLE MESSAGE GOES A LONG WAY</span><h3>Write me a note</h3></div>
+              <span class="form-flower" aria-hidden="true">✿</span>
+            </div>
+            <div class="form-grid">
+              <label class="form-field">Your name
+                <input name="name" type="text" autocomplete="name" maxlength="80" placeholder="What should I call you?" required />
+              </label>
+              <label class="form-field">Email address
+                <input name="email" type="email" autocomplete="email" maxlength="254" placeholder="you@example.com" required />
+              </label>
+              <label class="form-field form-message">Your message
+                <textarea name="message" rows="4" maxlength="2000" placeholder="Share a thought, question, or kind note…" required></textarea>
+              </label>
+              <label class="form-trap" aria-hidden="true" tabindex="-1">Leave this field empty
+                <input name="website" type="text" tabindex="-1" autocomplete="off" />
+              </label>
+            </div>
+            <div class="form-footer">
+              <p class="contact-privacy">The website backend checks each note before delivery. Messages are not shown publicly.</p>
+              <button class="button button-coral" type="submit">Send my note <span aria-hidden="true">↗</span></button>
+            </div>
+            <p class="contact-form-status" id="contact-status" role="status" aria-live="polite"></p>
+          </form>
+          <div class="contact-sunset" aria-hidden="true"><span></span><i></i></div>
+          <img class="flower-cutout contact-flower" src="./assets/floral-cluster.webp" alt="" />
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer"><div class="page-width footer-inner"><a class="brand" href="#home">ego<span class="brand-flower">✿</span></a><p>Made with love for a story still unfolding.</p><span>© <span id="year"></span> Ego Favour Anyaeji</span></div></footer>
+
+    <div class="sparkle-layer" id="sparkle-layer" aria-hidden="true"></div>
+  </body>
+</html>
